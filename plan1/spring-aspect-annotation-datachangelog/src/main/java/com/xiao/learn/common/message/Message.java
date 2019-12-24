@@ -44,4 +44,20 @@ public class Message {
     public boolean isFail() {
         return this.status == STATUS_FAIL;
     }
+
+    public static Message ok() {
+        return new Message();
+    }
+
+    public static Message ok(String message) {
+        return new Message(STATUS_OK, message);
+    }
+
+    public static Message fail() {
+        return new Message(STATUS_FAIL, MESSAGE_FAIL);
+    }
+
+    public static Message fail(String message) {
+        return new Message(STATUS_FAIL, message);
+    }
 }
