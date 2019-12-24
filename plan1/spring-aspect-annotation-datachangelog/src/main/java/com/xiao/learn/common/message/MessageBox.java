@@ -33,4 +33,19 @@ public class MessageBox<T> extends Message {
         return this;
     }
 
+    public static <T> MessageBox<T> ok(T data) {
+        return new MessageBox<>(data);
+    }
+
+    public static <T> MessageBox<T> ok(String message, T data) {
+        return new MessageBox<>(STATUS_OK, message, data);
+    }
+
+    public static <T> MessageBox<T> fail(T data) {
+        return new MessageBox<>(STATUS_FAIL, MESSAGE_FAIL, data);
+    }
+
+    public static <T> MessageBox<T> fail(String message, T data) {
+        return new MessageBox<>(STATUS_FAIL, message, data);
+    }
 }
