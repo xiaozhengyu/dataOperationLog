@@ -1,6 +1,7 @@
 package com.xiao.systemlog.common.auditor;
 
 import org.springframework.data.domain.AuditorAware;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
@@ -10,6 +11,7 @@ import java.util.Optional;
  * 说明：为@CreateBy、@LostModifyBy、@CreateDate、@LostModifyDate提供支持。
  * 实现AuditorAware接口，告诉JPA当前用户是谁。
  */
+@Service
 public class MyAuditorAware implements AuditorAware<String> {
     @Override
     public Optional<String> getCurrentAuditor() {
