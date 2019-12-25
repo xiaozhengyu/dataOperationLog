@@ -1,7 +1,7 @@
-package com.xiao.systemlog.common.test.service;
+package com.xiao.systemlog.test.service;
 
 
-import com.xiao.systemlog.common.test.entity.StudentEntity;
+import com.xiao.systemlog.test.entity.StudentEntity;
 
 import java.util.List;
 

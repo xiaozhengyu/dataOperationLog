@@ -1,7 +1,7 @@
-package com.xiao.systemlog.common.test.repository;
+package com.xiao.systemlog.test.repository;
 
 
-import com.xiao.systemlog.common.test.entity.StudentEntity;
+import com.xiao.systemlog.test.entity.StudentEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

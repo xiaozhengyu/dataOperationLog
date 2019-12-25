@@ -1,8 +1,8 @@
-package com.xiao.systemlog.common.test.serviceimpl;
+package com.xiao.systemlog.test.serviceimpl;
 
-import com.xiao.systemlog.common.test.entity.StudentEntity;
-import com.xiao.systemlog.common.test.repository.StudentRepository;
-import com.xiao.systemlog.common.test.service.StudentService;
+import com.xiao.systemlog.test.entity.StudentEntity;
+import com.xiao.systemlog.test.repository.StudentRepository;
+import com.xiao.systemlog.test.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
