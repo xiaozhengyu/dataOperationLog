@@ -18,8 +18,7 @@ public class Main {
      * @param id - 用户id
      */
     @DataLog(moduleName = "用户管理模块",
-            methodName = "com.xiao.systemlog.Main.deleteById",
-            operation = OperationType.DELETE,
+            operationType = OperationType.DELETE,
             description = "根据id删除用户信息")
     public void deleteById(String id) {
     }
@@ -30,8 +29,8 @@ public class Main {
             if (method.isAnnotationPresent(DataLog.class)) {
                 DataLog dataLog = method.getAnnotation(DataLog.class);
                 System.out.println("moduleName = " + dataLog.moduleName());
-                System.out.println("methodName = " + dataLog.methodName());
-                System.out.println("operation = " + dataLog.operation());
+                System.out.println("methodName = " + method.getName());
+                System.out.println("operation = " + dataLog.operationType());
                 System.out.println("description = " + dataLog.description());
             }
         } catch (NoSuchMethodException e) {

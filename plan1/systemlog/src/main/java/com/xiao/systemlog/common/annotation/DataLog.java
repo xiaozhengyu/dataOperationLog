@@ -18,17 +18,10 @@ public @interface DataLog {
     String moduleName();
 
     /**
-     * 操作发生在哪个方法
-     * note - 使用全限定名
-     * example - xxx.xxx.xxx.userServiceImpl.deleteById
-     */
-    String methodName();
-
-    /**
      * 操作类型
      * example - OperationType.INSERT、OperationType.DELETE、OperationType.UPDATE
      */
-    OperationType operation();
+    OperationType operationType();
 
     /**
      * 操作详细描述

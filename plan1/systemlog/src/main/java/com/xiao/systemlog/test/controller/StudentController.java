@@ -37,4 +37,15 @@ public class StudentController {
             return Message.fail();
         }
     }
+
+    @GetMapping("deleteById")
+    public Message insert(@RequestParam String id) {
+        try {
+            studentService.deleteById(id);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Message.fail();
+        }
+        return Message.ok();
+    }
 }

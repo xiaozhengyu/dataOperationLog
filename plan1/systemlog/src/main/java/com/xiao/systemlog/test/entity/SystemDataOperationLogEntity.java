@@ -28,21 +28,45 @@ public class SystemDataOperationLogEntity {
     @GenericGenerator(name = "genericGenerator", strategy = "uuid")
     private String id;
 
+    /**
+     * 模块名
+     */
     @Column(name = "moduleName")
     private String moduleName;
 
+    /**
+     * 操作发生在哪个类
+     */
+    @Column(name = "className")
+    private String className;
+
+    /**
+     * 操作发生在哪个方法
+     */
     @Column(name = "methodName")
     private String methodName;
 
+    /**
+     * 操作类型OperationType.XXX
+     */
     @Column(name = "operation")
     private String operation;
 
+    /**
+     * 操作描述
+     */
     @Column(name = "description")
     private String description;
 
+    /**
+     * 操作前数据
+     */
     @Column(name = "dataBefore")
     private String dataBefore;
 
+    /**
+     * 操作数据
+     */
     @Column(name = "dataAfter")
     private String dataAfter;
 

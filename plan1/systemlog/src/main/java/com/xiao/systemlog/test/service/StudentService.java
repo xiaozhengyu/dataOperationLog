@@ -12,7 +12,7 @@ import java.util.List;
  */
 public interface StudentService {
     /**
-     * get all records in the student table
+     * Get all records in the student table
      *
      * @return All records in the student table
      */
@@ -25,4 +25,11 @@ public interface StudentService {
      * @return Inserted data or changed data
      */
     StudentEntity update(StudentEntity student);
+
+    /**
+     * Delete a record in the table by record id
+     *
+     * @param id - record id
+     */
+    void deleteById(String id);
 }
